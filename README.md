@@ -40,4 +40,4 @@ return [
     'charset' => 'utf8',
 ];
 ```
-Now follow the Yii 2 Advanced Project [Template Application preparation steps](https://github.com/yiisoft/yii2-app-advanced/blob/master/docs/guide/start-installation.md#preparing-application)
+Now follow the Yii 2 Advanced Project [Template Application preparation](https://github.com/yiisoft/yii2-app-advanced/blob/master/docs/guide/start-installation.md#preparing-application) steps
