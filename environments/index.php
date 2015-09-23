@@ -32,14 +32,39 @@ return [
     'Development' => [
         'path' => 'dev',
         'setWritable' => [
+            'backend/controllers',
+            'backend/models',
+            'backend/runtime',
+            'backend/views',
+            'backend/web/assets',
+
+            'common/models',
+
+            'frontend/controllers',
+            'frontend/models',
+            'frontend/runtime',
+            'frontend/views',
+            'frontend/web/assets',
+        ],
+        'setExecutable' => [
+            'yii',
+        ],
+        'setCookieValidationKey' => [
+            'backend/config/main-local.php',
+            'frontend/config/main-local.php',
+        ],
+    ],
+    'Staging' => [
+        'path' => 'staging',
+        'setWritable' => [
             'backend/runtime',
             'backend/web/assets',
+
             'frontend/runtime',
             'frontend/web/assets',
         ],
         'setExecutable' => [
             'yii',
-            'tests/codeception/bin/yii',
         ],
         'setCookieValidationKey' => [
             'backend/config/main-local.php',
@@ -51,6 +76,7 @@ return [
         'setWritable' => [
             'backend/runtime',
             'backend/web/assets',
+
             'frontend/runtime',
             'frontend/web/assets',
         ],
